@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Supplier Quatation</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Series</th>
+            <th>Date</th>
+            <th>Supplier</th>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Stock UOM</th>
+            <th>Rate</th>
+            <th>Type</th>
+            <th>Account Head</th>
+            <th>Quoted Rate</th>
+            <th>Taxes & Charges</th>
+
+
+        </tr>
+        {{#each SupplierQuot}}
+        <tr>
+            <th>{{this.prsrId}}</th>
+            <th>{{this.suSeries}}</th>
+            <th>{{this.date}}</th>
+            <th>{{this.supplier}}</th>
+            <th>{{this.itemCode}}</th>
+            <th>{{this.quantity}}</th>
+            <th>{{this.stockUom}}</th>
+            <th>{{this.rate}}</th>
+            <th>{{this.sutype}}</th>
+            <th>{{this.accountHead}}</th>
+            <th>{{this.squotrate}}</th>
+            <th>{{this.taxandChg}}</th>
+
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

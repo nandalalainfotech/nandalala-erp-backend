@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Item Wise Purchase</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Item</th>
+            <th>Item Group</th>
+            <th>InVoice</th>
+            <th>Posting Date</th>
+            <th>Supplier Name</th>
+            <th>Payable Account</th>
+            <th>Payment Mode</th>
+            <th>Project Name</th>
+            <th>Company</th>
+            <th>Purchase Order</th>
+            <th>Purchase Receipt</th>
+            <th>Expense Account</th>
+            <th>Quantity</th>
+            <th>Rate</th>
+            <th>Amount</th>
+            <th>Total Tax</th>
+            <th>Total</th>
+            <th>Currency</th>
+
+        </tr>
+        {{#each ItemWisePurchase}}
+        <tr>
+            <th>{{this.iwprId}}</th>
+            <th>{{this.itemCode}}</th>
+            <th>{{this.itemGroup}}</th>
+            <th>{{this.inVoice}}</th>
+            <th>{{this.postingDate}}</th>
+            <th>{{this.supName}}</th>
+            <th>{{this.payAccount}}</th>
+            <th>{{this.paymentMode}}</th>
+            <th>{{this.projectname}}</th>
+            <th>{{this.company}}</th>
+            <th>{{this.poSeries}}</th>
+            <th>{{this.purtName}}</th>
+            <th>{{this.expenseAccount}}</th>
+            <th>{{this.quantity}}</th>
+            <th>{{this.rate}}</th>
+            <th>{{this.amount}}</th>
+            <th>{{this.totalTax}}</th>
+            <th>{{this.total}}</th>
+            <th>{{this.currency}}</th>
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Projected Qty</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Item</th>
+            <th>Item Group</th>
+            <th>Brand</th>
+            <th>WareHouse</th>
+            <th>UOM</th>
+            <th>Actual Quantity</th>
+            <th>Planned Quantity</th>
+            <th>Requested Quantity</th>
+            <th>Ordered Quantity</th>
+            <th>Reserved Quantity</th>
+            <th>Reorder Value</th>
+            <th>Reorder Quantity</th>
+            <th>Shortage Quantity</th>
+            <th>Description</th>
+
+        </tr>
+        {{#each PrjoctQty}}
+        <tr>
+            <th>{{this.stprojId}}</th>
+            <th>{{this.itemCode}}</th>
+            <th>{{this.itemGroup}}</th>
+            <th>{{this.brand}}</th>
+            <th>{{this.wareHouse}}</th>
+            <th>{{this.uom}}</th>
+            <th>{{this.actualQty}}</th>
+            <th>{{this.plannedQty}}</th>
+            <th>{{this.requestedQty}}</th>
+            <th>{{this.orderedQty}}</th>
+            <th>{{this.reservedQty}}</th>
+            <th>{{this.reorderValue}}</th>
+            <th>{{this.reorderQty}}</th>
+            <th>{{this.shortageQty}}</th>
+            <th>{{this.description}}</th>
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

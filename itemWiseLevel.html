@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;"> Item Wise Level</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Item</th>
+            <th>Safety Stock</th>
+            <th>Lead Time Days</th>
+            <th>Consumed</th>
+            <th>Delivered</th>
+            <th>Total OutGoing</th>
+            <th>Average Daily OutGoing</th>
+            <th>Reorder Level</th>
+            <th>Description</th>
+
+
+        </tr>
+        {{#each ItemWiseLevel}}
+        <tr>
+            <th>{{this.iwlId}}</th>
+            <th>{{this.itemCode}}</th>
+            <th>{{this.safetyStk}}</th>
+            <th>{{this.leadtimeDays}}</th>
+            <th>{{this.consumed}}</th>
+            <th>{{this.delivered}}</th>
+            <th>{{this.totalOutgoing}}</th>
+            <th>{{this.avgdailyOutgoing}}</th>
+            <th>{{this.reorderLevel}}</th>
+            <th>{{this.description}}</th>
+
+
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

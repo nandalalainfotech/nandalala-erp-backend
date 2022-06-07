@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Pricing Rule</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Item</th>
+            <th>Price Title</th>
+            <th>Buying</th>
+            <th>Selling</th>
+            <th>Minimum Quantity</th>
+            <th>Maximum Quantity</th>
+            <th>Valid From</th>
+            <th>Company</th>
+            <th>Valid Upto</th>
+            <th>Price or Discount</th>
+            <th>Discount Price List</th>
+            <th>Price List</th>
+
+        </tr>
+        {{#each PricingRule}}
+        <tr>
+            <th>{{this.priceruleid}}</th>
+            <th>{{this.itemCode}}</th>
+            <th>{{this.priceTitle}}</th>
+            <th>{{this.buying}}</th>
+            <th>{{this.selling}}</th>
+            <th>{{this.minQty}}</th>
+            <th>{{this.maxQty}}</th>
+            <th>{{this.validFrom}}</th>
+            <th>{{this.company}}</th>
+            <th>{{this.validUpto}}</th>
+            <th>{{this.prordisc}}</th>
+            <th>{{this.discprlist}}</th>
+            <th>{{this.forprlist}}</th>
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

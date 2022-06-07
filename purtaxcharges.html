@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Purchase Tax And Charges</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Bank Account</th>
+            <th>Company</th>
+            <th>Type</th>
+            <th>Account Head</th>
+            <th>Rate</th>
+            <th>Amount</th>
+            <th>Total</th>
+
+
+
+        </tr>
+        {{#each Purtaxcharges}}
+        <tr>
+            <th>{{this.putaxId}}</th>
+            <th>{{this.status}}</th>
+            <th>{{this.company}}</th>
+            <th>{{this.taxchgType}}</th>
+            <th>{{this.accountHead}}</th>
+            <th>{{this.rate}}</th>
+            <th>{{this.amount}}</th>
+            <th>{{this.total}}</th>
+
+
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

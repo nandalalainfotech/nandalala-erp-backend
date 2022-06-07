@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Add New Sales Contact</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Employee Code</th>
+            <th>Employee Name</th>
+            <th>From Date</th>
+            <th>To Date</th>
+            <th>Hours</th>
+            <th>Activity Type</th>
+            <th>Project</th>
+            <th>Status</th>
+            <th>Task</th>
+            <th>Task</th>
+            
+        </tr>
+        {{#each TimeSheet}}
+        <tr>
+            <th>{{this.id}}</th>
+            <th>{{this.employee}}</th>
+            <th>{{this.employeename}}</th>
+            <th>{{this.fromdatetime}}</th>
+            <th>{{this.todatetime}}</th>
+            <th>{{this.hours}}</th>
+            <th>{{this.activitytype}}</th>
+            <th>{{this.project}}</th>
+            <th>{{this.status}}</th>
+            <th>{{this.task}}</th>
+            <th>{{this.timesheet}}</th>
+          
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

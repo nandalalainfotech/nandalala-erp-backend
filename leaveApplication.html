@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Make Leave Applications</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Series</th>
+            <th>Status</th>
+            <th>From Date</th>
+            <th>To Date</th>
+            <th>Posting Date</th>
+            <th>Employee</th>
+            <th>Leave Approver</th>
+            <th>Company</th>
+            <th>Department Name</th>
+            <th>Reason</th>
+            
+           
+
+        </tr>
+        {{#each LeaveApplication}}
+        <tr>
+            <th>{{this.lvappId}}</th>
+            <th>{{this.series}}</th>
+            <th>{{this.leaveType}}</th>
+            <th>{{this.fromDate}}</th>
+            <th>{{this.toDate}}</th>
+            <th>{{this.postingDate}}</th>
+            <th>{{this.empNumber}}</th>
+            <th>{{this.leaveApprover}}</th>
+            <th>{{this.company}}</th>
+            <th>{{this.deptName}}</th>
+            <th>{{this.reason}}</th>
+            
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

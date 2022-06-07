@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Purchase Register</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Posting Date</th>
+            <th>Invoice</th>
+            <th>Supplier</th>
+            <th>Supplier Type</th>
+            <th>Account</th>
+            <th>Payment Mode</th>
+            <th>Project</th>
+            <th>Bill Number</th>
+            <th>Bill Date</th>
+            <th>Purchase Order</th>
+            <th>Purchase Receipt</th>
+            <th>Currency</th>
+            <th>Furnitures Count</th>
+            <th>Softwares Count</th>
+            <th>Stock Balance</th>
+            <th>Net Total</th>
+            <th>Total Tax</th>
+            <th>Grand Total</th>
+            <th>Rounded Total</th>
+            <th>OutstandingAmt</th>
+            <th>Remarks</th>
+
+        </tr>
+        {{#each PurchaseRegister}}
+        <tr>
+            <th>{{this.regId}}</th>
+            <th>{{this.postingDate}}</th>
+            <th>{{this.invoice}}</th>
+            <th>{{this.supName}}</th>
+            <th>{{this.supType}}</th>
+            <th>{{this.accountType}}</th>
+            <th>{{this.paymentMode}}</th>
+            <th>{{this.projectname}}</th>
+            <th>{{this.billNo}}</th>
+            <th>{{this.billDate}}</th>
+            <th>{{this.poSeries}}</th>
+            <th>{{this.purecpt}}</th>
+            <th>{{this.currency}}</th>
+            <th>{{this.furnituresCount}}</th>
+            <th>{{this.softwaresCount}}</th>
+            <th>{{this.stkrecBalance}}</th>
+            <th>{{this.netTotal}}</th>
+            <th>{{this.totalTax}}</th>
+            <th>{{this.grandTotal}}</th>
+            <th>{{this.roundTotal}}</th>
+            <th>{{this.outstandAmt}}</th>
+            <th>{{this.remarks}}</th>
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

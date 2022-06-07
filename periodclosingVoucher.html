@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Period Closing Voucher</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Transaction Date</th>
+            <th>Closing Account Head</th>
+            <th>Posting Date</th>
+            <th>Closing Fiscal Year</th>
+            <th>Company</th>
+            <th>Remarks</th>
+
+
+        </tr>
+        {{#each PeriodclosingVoucher}}
+        <tr>
+            <th>{{this.id}}</th>
+            <th>{{this.transactiondate}}</th>
+            <th>{{this.closingaccounthead}}</th>
+            <th>{{this.postingdate}}</th>
+            <th>{{this.closingfiscalyear}}</th>
+            <th>{{this.company}}</th>
+            <th>{{this.remarks}}</th>
+
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

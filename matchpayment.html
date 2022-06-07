@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Payment Reconciliation</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Company</th>
+            <th>Party Type</th>
+            <th>Party</th>
+            <th>Receivable / Payable Account</th>
+            <th>From Invoice Date</th>
+            <th>To Invoice Date</th>
+            <th>Bank / Cash Account</th>
+            <th>Minimum Invoice Amount</th>
+            <th>Maximum Invoice Amount</th>
+            <th>Reference Name</th>
+            <th>Invoice Number</th>
+            <th>Amount</th>
+            <th>Allocated Amount</th>
+
+
+
+        </tr>
+        {{#each Matchpayment}}
+        <tr>
+            <th>{{this.id}}</th>
+            <th>{{this.company}}</th>
+            <th>{{this.partytype}}</th>
+            <th>{{this.party}}</th>
+            <th>{{this.receivableorpayableaccount}}</th>
+            <th>{{this.fromdate}}</th>
+            <th>{{this.todate}}</th>
+            <th>{{this.bankorcashaccount}}</th>
+            <th>{{this.minimuminvoiceamount}}</th>
+            <th>{{this.maximuminvoiceamount}}</th>
+            <th>{{this.refName}}</th>
+            <th>{{this.invoiceNumber}}</th>
+            <th>{{this.amount}}</th>
+            <th>{{this.allocatedamount}}</th>
+
+
+
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

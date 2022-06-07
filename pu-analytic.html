@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">PU Analytic</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Tree Type</th>
+            <th>Based on</th>
+            <th>From Date</th>
+            <th>To Date</th>
+            <th>Company</th>
+            <th>Range</th>
+            <th>Value or Quantity</th>
+
+        </tr>
+        {{#each PuAnalytic}}
+        <tr>
+            <th>{{this.puansId}}</th>
+            <th>{{this.treeType}}</th>
+            <th>{{this.basedOn}}</th>
+            <th>{{this.fromDate}}</th>
+            <th>{{this.toDate}}</th>
+            <th>{{this.company}}</th>
+            <th>{{this.anRange}}</th>
+            <th>{{this.valueorqty}}</th>
+
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

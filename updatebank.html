@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Bank Reconciliation</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Bank Account</th>
+            <th>From Date</th>
+            <th>To Date</th>
+            <th>Against Account</th>
+            <th>Amount</th>
+            <th>Cheque</th>
+            <th>Clearance Date</th>
+
+
+        </tr>
+        {{#each Updatebank}}
+        <tr>
+            <th>{{this.id}}</th>
+            <th>{{this.bankaccount}}</th>
+            <th>{{this.fromdate}}</th>
+            <th>{{this.todate}}</th>
+            <th>{{this.customername}}</th>
+            <th>{{this.amount}}</th>
+            <th>{{this.chqNumber}}</th>
+            <th>{{this.clearanceDate}}</th>
+
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

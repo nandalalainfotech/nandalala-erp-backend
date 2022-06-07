@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Ledger Details</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Item</th>
+            <th>Item Group</th>
+            <th>Date</th>
+            <th>Brand</th>
+            <th>WareHouse</th>
+            <th>UOM</th>
+            <th>Quantity</th>
+            <th>Balance Quantity</th>
+            <th>Incoming Rate</th>
+            <th>Valuation Rate</th>
+            <th>Balance Value</th>
+            <th>Voucher Type</th>
+            <th>Voucher</th>
+            <th>Batch</th>
+            <th>Serial</th>
+            <th>Company</th>
+            <th>Description</th>
+
+        </tr>
+        {{#each StockLedger}}
+        <tr>
+            <th>{{this.stledId}}</th>
+            <th>{{this.itemCode}}</th>
+            <th>{{this.itemGroup}}</th>
+            <th>{{this.date}}</th>
+            <th>{{this.brand}}</th>
+            <th>{{this.wareHouse}}</th>
+            <th>{{this.stkUom}}</th>
+            <th>{{this.quantity}}</th>
+            <th>{{this.balanceQty}}</th>
+            <th>{{this.incomingRate}}</th>
+            <th>{{this.valuationRate}}</th>
+            <th>{{this.balanceValue}}</th>
+            <th>{{this.voucherType}}</th>
+            <th>{{this.voucherCode}}</th>
+            <th>{{this.batch}}</th>
+            <th>{{this.serialNo}}</th>
+            <th>{{this.company}}</th>
+            <th>{{this.description}}</th>
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

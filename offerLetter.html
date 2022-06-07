@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Add Offer Details</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Prefix</th>
+            <th>Applicant Name</th>
+            <th>Company Name</th>
+            <th>Offer</th>
+            <th>Refer Name</th>
+            <th>Position</th>
+            <th>Grade</th>
+            <th>CTC</th>
+            <th>Joining Date</th>
+            <th>Line 1</th>
+            <th>Line 2</th>
+            <th>City/Village</th>
+            <th>State/Territory</th>
+            <th>Country</th>
+            <th>Postal Code</th>
+            <th>Mobile Number</th>
+            <th>Alternative Number (If Any)</th>
+            <th>Offer Letter Name</th>
+           
+
+        </tr>
+        {{#each OfferLetter}}
+        <tr>
+            <th>{{this.offerId}}</th>
+            <th>{{this.applicantNamePrefix}}</th>
+            <th>{{this.applicantName}}</th>
+            <th>{{this.companyName}}</th>
+            <th>{{this.offer}}</th>
+            <th>{{this.refer}}</th>
+            <th>{{this.position}}</th>
+            <th>{{this.grade}}</th>
+            <th>{{this.ctc}}</th>
+            <th>{{this.dateOfJoin}}</th>
+            <th>{{this.line1}}</th>
+            <th>{{this.line2}}</th>
+            <th>{{this.cityOrVillage}}</th>
+            <th>{{this.stateOrTerritory}}</th>
+            <th>{{this.country}}</th>
+            <th>{{this.postalCode}}</th>
+            <th>{{this.phoneNo}}</th>
+            <th>{{this.alternativePhoneNo}}</th>
+            <th>{{this.offerLetter}}</th>
+            
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Purchase Items Order</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Purchase Order</th>
+            <th>Date</th>
+            <th>Required By Date</th>
+            <th>Supplier Name</th>
+            <th>Project Name</th>
+            <th>Quantity</th>
+            <th>Received Quantity</th>
+            <th>Quantity to Receive</th>
+            <th>WareHouse</th>
+            <th>Item</th>
+            <th>Brand</th>
+            <th>Company</th>
+            <th>Description</th>
+
+
+        </tr>
+        {{#each PurchaseItemDeliver}}
+        <tr>
+            <th>{{this.poitrecId}}</th>
+            <th>{{this.puOrder}}</th>
+            <th>{{this.date}}</th>
+            <th>{{this.reqbyDate}}</th>
+            <th>{{this.supName}}</th>
+            <th>{{this.projectName}}</th>
+            <th>{{this.quantity}}</th>
+            <th>{{this.receivedQty}}</th>
+            <th>{{this.qtytoReceive}}</th>
+            <th>{{this.warehouseName}}</th>
+            <th>{{this.itemCode}}</th>
+            <th>{{this.brandNameapr}}</th>
+            <th>{{this.company}}</th>
+            <th>{{this.description}}</th>
+
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

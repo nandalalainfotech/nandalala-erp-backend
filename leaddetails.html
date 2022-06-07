@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Lead Details</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Lead Name</th>
+            <th>Company Name</th>
+            <th>Status</th>
+            <th>Address</th>
+            <th>State</th>
+            <th>PinCode</th>
+            <th>Country</th>
+            <th>Phone</th>
+            <th>Mobile Number</th>
+            <th>Email</th>
+            <th>Lead Owner</th>
+            <th>Territory</th>
+        </tr>
+        {{#each Leaddetails}}
+        <tr>
+            <th>{{this.leadId}}</th>
+            <th>{{this.leadName}}</th>
+            <th>{{this.companyName}}</th>
+            <th>{{this.status}}</th>
+            <th>{{this.address}}</th>
+            <th>{{this.state}}</th>
+            <th>{{this.pinCode}}</th>
+            <th>{{this.country}}</th>
+            <th>{{this.phone}}</th>
+            <th>{{this.mobileNo}}</th>
+            <th>{{this.email}}</th>
+            <th>{{this.leadOwner}}</th>
+            <th>{{this.terName}}</th>
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

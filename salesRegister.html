@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Sale Register</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Posting Date</th>
+            <th>Customer</th>
+            <th>Customer Group</th>
+            <th>Territory</th>
+            <th>Account</th>
+            <th>Payment Mode</th>
+            <th>Project</th>
+            <th>Sales</th>
+            <th>Delivery Note</th>
+            <th>Currency</th>
+            <th>Gain/Loss</th>
+            <th>Sales WPL</th>
+            <th>Net Total</th>
+            <th>Total Tax</th>
+            <th>Grand Total</th>
+            <th>Rounded Total</th>
+            <th>Outstanding Amount</th>
+            <th>Remarks</th>
+
+
+        </tr>
+        {{#each SalesRegister}}
+        <tr>
+            <th>{{this.regId}}</th>
+            <th>{{this.postingDate}}</th>
+            <th>{{this.customername}}</th>
+            <th>{{this.customergroup}}</th>
+            <th>{{this.terName}}</th>
+            <th>{{this.accountType}}</th>
+            <th>{{this.paymentMode}}</th>
+            <th>{{this.projectname}}</th>
+            <th>{{this.salesCode}}</th>
+            <th>{{this.delNote}}</th>
+            <th>{{this.currency}}</th>
+            <th>{{this.gainloss}}</th>
+            <th>{{this.saleswpl}}</th>
+            <th>{{this.netTotal}}</th>
+            <th>{{this.totalTax}}</th>
+            <th>{{this.grandTotal}}</th>
+            <th>{{this.roundedTotal}}</th>
+            <th>{{this.outstandAmt}}</th>
+            <th>{{this.remarks}}</th>
+
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

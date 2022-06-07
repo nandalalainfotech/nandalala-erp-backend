@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Tax Rule</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Tax Type</th>
+            <th>Tax Template</th>
+            <th>Customer</th>
+            <th>Billing City</th>
+            <th>Shipping City</th>
+            <th>Billing State</th>
+            <th>Shipping State</th>
+            <th>Billing Country</th>
+            <th>Shipping Country</th>
+            <th>From Date</th>
+            <th>To Date</th>
+
+        </tr>
+        {{#each TaxRule}}
+        <tr>
+            <th>{{this.id}}</th>
+            <th>{{this.taxtype}}</th>
+            <th>{{this.taxtemplate}}</th>
+            <th>{{this.customer}}</th>
+            <th>{{this.billingcity}}</th>
+            <th>{{this.shippingcity}}</th>
+            <th>{{this.billingstate}}</th>
+            <th>{{this.shippingstate}}</th>
+            <th>{{this.billingcountry}}</th>
+            <th>{{this.shippingcountry}}</th>
+            <th>{{this.fromdate}}</th>
+            <th>{{this.todate}}</th>
+
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Stock Settings</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Item Naming By</th>
+            <th>Default Valuation</th>
+            <th>Item Group</th>
+            <th>Allowance Percent</th>
+            <th>UOM</th>
+            <th>WareHouse Name</th>
+            <th>Show BarCode Field</th>
+            <th>Auto Insert Price List</th>
+            <th>Auto Set Serial no</th>
+            <th>Allow Negative Stock</th>
+
+        </tr>
+        {{#each StockSetting}}
+        <tr>
+            <th>{{this.setId}}</th>
+            <th>{{this.itemnameBy}}</th>
+            <th>{{this.defaultValue}}</th>
+            <th>{{this.itemGroup}}</th>
+            <th>{{this.allowancePercent}}</th>
+            <th>{{this.defaultUom}}</th>
+            <th>{{this.warehouseName}}</th>
+            <th>{{this.showbarcodeField}}</th>
+            <th>{{this.autoinsertPricelist}}</th>
+            <th>{{this.autosetSerialno}}</th>
+            <th>{{this.allownegativeStock}}</th>  
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

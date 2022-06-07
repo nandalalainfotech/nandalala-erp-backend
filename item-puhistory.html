@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Item Purchase History</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Item</th>
+            <th>Item Group</th>
+            <th>Quantity</th>
+            <th>UOM</th>
+            <th>Date</th>
+            <th>Amount</th>
+            <th>Purchase Order</th>
+            <th>Transaction Date</th>
+            <th>Supplier</th>
+            <th>Received Qty</th>
+            <th>Company</th>
+            <th>Description</th>
+
+        </tr>
+        {{#each ItemPuhistory}}
+        <tr>
+            <th>{{this.histId}}</th>
+            <th>{{this.itemCode}}</th>
+            <th>{{this.itemGroup}}</th>
+            <th>{{this.quantity}}</th>
+            <th>{{this.uom}}</th>
+            <th>{{this.date}}</th>
+            <th>{{this.amount}}</th>
+            <th>{{this.poSeries}}</th>
+            <th>{{this.transDate}}</th>
+            <th>{{this.supplier}}</th>
+            <th>{{this.receivedqty}}</th>
+            <th>{{this.company}}</th>
+            <th>{{this.description}}</th>
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

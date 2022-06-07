@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="35" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="35" style="text-align:center;width: 100%;">Employee Monthly Attendance Record</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Year</th>
+            <th>Employee Number</th>
+            <th>Employee Name</th>
+            <th>Department Name</th>
+            <th>Branch</th>
+            <th>Company</th>
+            <th>Designation</th>
+            <th>One</th>
+            <th>Two</th>
+            <th>Three</th>
+            <th>Four</th>
+            <th>Five</th>
+            <th>Six</th>
+            <th>Seven</th>
+            <th>Eight</th>
+            <th>Nine</th>
+            <th>Ten</th>
+            <th>Eleven</th>
+            <th>Twelve</th>
+            <th>Thirteen</th>
+            <th>Fourteen</th>
+            <th>Fifteen</th>
+            <th>Sixteen</th>
+            <th>Seventeen</th>
+            <th>Eighteen</th>
+            <th>Nineteen</th>
+            <th>Twenty</th>
+            <th>Twenty One</th>
+            <th>Twenty Two</th>
+            <th>Twenty Three</th>
+            <th>Twenty Four</th>
+            <th>Twenty Five</th>
+            <th>Twenty Six</th>
+            <th>Twenty Seven</th>
+            <th>Twenty Eight</th>
+            <th>Twenty Nine</th>
+            <th>Thirty</th>
+            <th>Total Present</th>
+            <th>Total Absent</th>
+            <th>Month</th>
+
+        </tr>
+        {{#each MonthlyAttendSheet}}
+        <tr>
+            <th>{{this.atsId}}</th>
+            <th>{{this.attYear}}</th>
+            <th>{{this.empNumber}}</th>
+            <th>{{this.empName}}</th>
+            <th>{{this.deptName}}</th>
+            <th>{{this.branch}}</th>
+            <th>{{this.empCompany}}</th>
+            <th>{{this.empDesign}}</th>
+            <th>{{this.one1}}</th>
+            <th>{{this.two2}}</th>
+            <th>{{this.three3}}</th>
+            <th>{{this.four4}}</th>
+            <th>{{this.five5}}</th>
+            <th>{{this.six6}}</th>
+            <th>{{this.seven7}}</th>
+            <th>{{this.eight8}}</th>
+            <th>{{this.nine9}}</th>
+            <th>{{this.ten10}}</th>
+            <th>{{this.eleven11}}</th>
+            <th>{{this.twelve12}}</th>
+            <th>{{this.thirteen13}}</th>
+            <th>{{this.fourteen14}}</th>
+            <th>{{this.fifteen15}}</th>
+            <th>{{this.sixteen16}}</th>
+            <th>{{this.seventeen17}}</th>
+            <th>{{this.eighteen18}}</th>
+            <th>{{this.nineteen19}}</th>
+            <th>{{this.twenty20}}</th>
+            <th>{{this.twentyone21}}</th>
+            <th>{{this.twentytwo22}}</th>
+            <th>{{this.twentythree23}}</th>
+            <th>{{this.twentyfour24}}</th>
+            <th>{{this.twentyfive25}}</th>
+            <th>{{this.twentysix26}}</th>
+            <th>{{this.twentyseven27}}</th>
+            <th>{{this.twentyeight28}}</th>
+            <th>{{this.twentynine29}}</th>
+            <th>{{this.thirty30}}</th>
+            <th>{{this.totalPresent}}</th>
+            <th>{{this.totalAbsent}}</th>
+            <th>{{this.months}}</th>
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

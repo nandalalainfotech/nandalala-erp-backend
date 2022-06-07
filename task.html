@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">TaskDetailsList</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Select Project</th>
+            <th>Task Description</th>
+            <th>Status</th>
+            <th>Assign To</th>
+            <th>Assign By</th>
+            <th>Starts On</th>
+            <th>Ends On</th>
+            <th>Task Duration</th>
+            <th>All Day</th>
+            <th>Send An Email Reminder</th>
+            <th>Repeat this Event</th>
+            <th>Project Id</th>
+        </tr>
+        {{#each Task}}
+        <tr>
+            <th>{{this.taskid}}</th>
+            <th>{{this.projectname}}</th>
+            <th>{{this.taskdescription}}</th>
+            <th>{{this.status}}</th>
+            <th>{{this.assignTo}}</th>
+            <th>{{this.assignBy}}</th>
+            <th>{{this.starton}}</th>
+            <th>{{this.endon}}</th>
+            <th>{{this.duration}}</th>
+            <th>{{this.allday}}</th>
+            <th>{{this.sendanemail}}</th>
+            <th>{{this.repeatthisevent}}</th>
+            <th>{{this.projectid}}</th>
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

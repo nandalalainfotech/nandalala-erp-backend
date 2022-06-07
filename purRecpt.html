@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="70" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="70" style="text-align:center;width: 100%;">Purchase Receipt Trend</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Item</th>
+            <th>Period</th>
+            <th>Based on</th>
+            <th>Fiscal Year</th>
+            <th>Company</th>
+            <th>JanQty</th>
+            <th>JanAmt</th>
+            <th>FebQty</th>
+            <th>FebAmt</th>
+            <th>MarQty</th>
+            <th>MarAmt</th>
+            <th>AprQty</th>
+            <th>AprAmt</th>
+            <th>MayQty</th>
+            <th>MayAmt</th>
+            <th>JunQty</th>
+            <th>JunAmt</th>
+            <th>JulQty</th>
+            <th>JulAmt</th>
+            <th>AugQty</th>
+            <th>AugAmt</th>
+            <th>SepQty</th>
+            <th>SepAmt</th>
+            <th>OctQty</th>
+            <th>OctAmt</th>
+            <th>NovQty</th>
+            <th>NovAmt</th>
+            <th>DecQty</th>
+            <th>DecAmt</th>
+            <!-- <th>TotalQty</th>
+            <th>TotalAmt</th>
+            <th>AugQtyt</th> -->
+
+        </tr>
+        {{#each PurRecpt}}
+        <tr>
+            <th>{{this.dntrendId}}</th>
+            <th>{{this.itemCode}}</th>
+            <th>{{this.period}}</th>
+            <th>{{this.basedOn}}</th>
+            <th>{{this.fiscalYear}}</th>
+            <th>{{this.company}}</th>
+            <th>{{this.janQty}}</th>
+            <th>{{this.janAmt}}</th>
+            <th>{{this.febQty}}</th>
+            <th>{{this.febAmt}}</th>
+            <th>{{this.marQty}}</th>
+            <th>{{this.marAmt}}</th>
+            <th>{{this.aprQty}}</th>
+            <th>{{this.aprAmt}}</th>
+            <th>{{this.mayQty}}</th>
+            <th>{{this.mayAmt}}</th>
+            <th>{{this.junQty}}</th>
+            <th>{{this.junAmt}}</th>
+            <th>{{this.julQty}}</th>
+            <th>{{this.julAmt}}</th>
+            <th>{{this.augQty}}</th>
+            <th>{{this.augAmt}}</th>
+            <th>{{this.sepQty}}</th>
+            <th>{{this.sepAmt}}</th>
+            <th>{{this.octQty}}</th>
+            <th>{{this.octAmt}}</th>
+            <th>{{this.novQty}}</th>
+            <th>{{this.novAmt}}</th>
+            <th>{{this.decQty}}</th>
+            <th>{{this.decAmt}}</th>
+            <!-- <th>{{this.totalQty}}</th>
+            <th>{{this.totalAmt}}</th>
+            <th>{{this.augQtyt}}</th> -->
+
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>
