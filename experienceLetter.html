@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Add Working Experience Details</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Prefix</th>
+            <th>Applicant Name</th>
+            <th>Company Name</th>
+            <th>Position</th>
+            <th>Grade</th>
+            <th>Joining Date</th>
+            <th>Relieving Date</th>
+            <th>Working Experience Letter Name</th>
+        </tr>
+        {{#each ExperienceLetter}}
+        <tr>
+            <th>{{this.workingexperienceId}}</th>
+            <th>{{this.applicantNamePrefix}}</th>
+            <th>{{this.applicantName}}</th>
+            <th>{{this.companyName}}</th>
+            <th>{{this.position}}</th>
+            <th>{{this.grade}}</th>
+            <th>{{this.dateOfJoin}}</th>
+            <th>{{this.dateOfRelieve}}</th>
+            <th>{{this.workingexperienceLetter}}</th>
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

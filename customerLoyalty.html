@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Customer Acquisition And Loyalty</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Year</th>
+            <th>Month</th>
+            <th>New Customers</th>
+            <th>Repeat Customers</th>
+            <th>Total</th>
+            <th>New Customers Revenue</th>
+            <th>Repeat Customers Revenue</th>
+            <th>Total Revenue</th>
+        </tr>
+        {{#each CustomerLoyalty}}
+        <tr>
+            <th>{{this.id}}</th>
+            <th>{{this.year}}</th>
+            <th>{{this.month}}</th>
+            <th>{{this.newcustomers}}</th>
+            <th>{{this.repeatcustomers}}</th>
+            <th>{{this.total}}</th>
+            <th>{{this.newcustomersrevenue}}</th>
+            <th>{{this.repeatcustomersrevenue}}</th>
+            <th>{{this.totalrevenue}}</th>
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

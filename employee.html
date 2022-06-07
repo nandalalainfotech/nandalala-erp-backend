@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Accounts Payable</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Employee Code</th>
+            <th>Employee Name</th>
+            <th>Employee DOB</th>
+            <th>Employee DOJ</th>
+            <th>Designation</th>
+            <th>Employee Gender</th>
+            <th>Employee Company</th>
+            <th>Employee Status</th>
+            <th>Department</th>
+            <th>Branch</th>
+           
+
+        </tr>
+        {{#each Employee}}
+        <tr>
+            <th>{{this.sNo}}</th>
+            <th>{{this.empNumber}}</th>
+            <th>{{this.empName}}</th>
+            <th>{{this.empDob}}</th>
+            <th>{{this.empDoj}}</th>
+            <th>{{this.empDesign}}</th>
+            <th>{{this.empGender}}</th>
+            <th>{{this.empCompany}}</th>
+            <th>{{this.empStatus}}</th>
+            <th>{{this.deptName}}</th>
+            <th>{{this.branch}}</th>
+            
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

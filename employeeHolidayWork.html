@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Employee Holiday List</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>From Date</th>
+            <th>To Date</th>
+            <th>Employee Number</th>
+            <th>Employee Name</th>
+            <th>Holiday List</th>
+            <th>Attendance Status</th>
+            <th>Holiday Date</th>
+            <th>Day</th>
+            
+        </tr>
+        {{#each EmployeeHolidayWork}}
+        <tr>
+            <th>{{this.empwhId}}</th>
+            <th>{{this.fromDate}}</th>
+            <th>{{this.toDate}}</th>
+            <th>{{this.empNumber}}</th>
+            <th>{{this.empName}}</th>
+            <th>{{this.holidayList}}</th>
+            <th>{{this.empStatus}}</th>
+            <th>{{this.whDate}}</th>
+            <th>{{this.holiday}}</th>
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Bank Clearance Statement</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>From Date</th>
+            <th>To Date</th>
+            <th>Bank Account</th>
+            <th>Payment Document</th>
+            <th>Payment Entry</th>
+            <th>Cheque Reference</th>
+            <th>Clearance Date</th>
+            <th>Against Accountee</th>
+            <th>Amount</th>
+
+
+        </tr>
+        {{#each Bankclearence}}
+        <tr>
+            <th>{{this.bankclrId}}</th>
+            <th>{{this.fromDate}}</th>
+            <th>{{this.toDate}}</th>
+            <th>{{this.bankAccount}}</th>
+            <th>{{this.payDocument}}</th>
+            <th>{{this.entrySeries}}</th>
+            <th>{{this.chequeref}}</th>
+            <th>{{this.clearanceDate}}</th>
+            <th>{{this.againstAccount}}</th>
+            <th>{{this.amount}}</th>
+
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

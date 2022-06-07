@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Company Accounts</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Company</th>
+            <th>Country</th>
+            <th>Abbreviation</th>
+            <th>Domain</th>
+            <th>Default Holiday List</th>
+            <th>Default Currency</th>
+            <th>Account Chart Type</th>
+            <th>Default Bank Account</th>
+            <th>Default Cash Account</th>
+            <th>Default Payable Account</th>
+            <th>Default Income Account</th>
+            <th>Round Off Center</th>
+
+
+        </tr>
+        {{#each ComAccount}}
+        <tr>
+            <th>{{this.caId}}</th>
+            <th>{{this.companyName}}</th>
+            <th>{{this.country}}</th>
+            <th>{{this.abbreviation}}</th>
+            <th>{{this.companyDomain}}</th>
+            <th>{{this.defholList}}</th>
+            <th>{{this.defCurrency}}</th>
+            <th>{{this.accchartType}}</th>
+            <th>{{this.defbankAccount}}</th>
+            <th>{{this.defcashAccount}}</th>
+            <th>{{this.defpayAccount}}</th>
+            <th>{{this.defincomeAccount}}</th>
+            <th>{{this.rndoffCenter}}</th>
+
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

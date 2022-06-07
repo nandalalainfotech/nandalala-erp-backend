@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Employee Salary Register</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Salary Slip Code</th>
+            <th>Employee Number</th>
+            <th>Employee Name</th>
+            <th>Department Name</th>
+            <th>Branch</th>
+            <th>Company</th>
+            <th>Designation</th>
+            <th>Month</th>
+            <th>Year</th>
+            <th>Leave Without Pay</th>
+            <th>Payment Days</th>
+            <th>Income Tax</th>
+            <th>Basic</th>
+            <th>Arrear Amount</th>
+            <th>Leave Encashment Amount</th>
+            <th>Gross pay</th>
+            <th>Total Deduction</th>
+            <th>Net Pay</th>
+           
+
+        </tr>
+        {{#each EmployeeSalesRegister}}
+        <tr>
+            <th>{{this.esregId}}</th>
+            <th>{{this.salslipCode}}</th>
+            <th>{{this.empNumber}}</th>
+            <th>{{this.empName}}</th>
+            <th>{{this.deptName}}</th>
+            <th>{{this.branch}}</th>
+            <th>{{this.empCompany}}</th>
+            <th>{{this.empDesign}}</th>
+            <th>{{this.salarymonth}}</th>
+            <th>{{this.salYear}}</th>
+            <th>{{this.lvwoutPay}}</th>
+            <th>{{this.paymentDays}}</th>
+            <th>{{this.incomeTax}}</th>
+            <th>{{this.basic}}</th>
+            <th>{{this.arrearAmt}}</th>
+            <th>{{this.lvencashAmt}}</th>
+            <th>{{this.grossPay}}</th>
+            <th>{{this.totalDeduct}}</th>
+            <th>{{this.netPay}}</th>
+            
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

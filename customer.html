@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Customer Details</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Customer ID</th>
+            <th>Customer Name</th>
+            <th>Customer Group</th>
+            <th>Address Line 1</th>
+            <th>Address Line 2</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Postal Code</th>
+            <th>Country</th>
+            <th>Is Primary Address</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone</th>
+            <th>Mobile Number</th>
+            <th>Email ID</th>
+            <th>Is Primary Contact</th>
+
+
+        </tr>
+        {{#each Customer}}
+        <tr>
+            <th>{{this.id}}</th>
+            <th>{{this.customerid}}</th>
+            <th>{{this.customername}}</th>
+            <th>{{this.customergroup}}</th>
+            <th>{{this.addressline1}}</th>
+            <th>{{this.addressline2}}</th>
+            <th>{{this.city}}</th>
+            <th>{{this.state}}</th>
+            <th>{{this.postalcode}}</th>
+            <th>{{this.country}}</th>
+            <th>{{this.isprimaryaddress}}</th>
+            <th>{{this.firstname}}</th>
+            <th>{{this.lastname}}</th>
+            <th>{{this.phone}}</th>
+            <th>{{this.mobilenumber}}</th>
+            <th>{{this.emailid}}</th>
+            <th>{{this.isprimarycontact}}</th>
+
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

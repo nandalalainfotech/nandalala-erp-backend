@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Add Employee Attendance</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Employee Number</th>
+            <th>Casual Leave Taken</th>
+            <th>Employee Name</th>
+            <th>Department Name</th>
+            <th>Casual Leave Balance</th>
+            <th>Componsatory Off Taken</th>
+            <th>Leave Without Pay Taken</th>
+            <th>Leave Without Pay Balance</th>
+            <th>Maternity Leave Taken</th>
+            <th>Maternity Leave Balance</th>
+            <th>Paternity Leave Taken</th>
+            <th>Paternity Leave Balance</th>
+            <th>Privilege Leave Taken</th>
+            <th>Privilege Leave Balance</th>
+            <th>Sick Leave Taken</th>
+            <th>Sick Leave Balance</th>
+            <th>Vacation Leave Taken</th>
+            <th>Vacation Leave Balance</th>
+            <th>Componsatory Off Balance</th>
+           
+
+        </tr>
+        {{#each empAttendance}}
+        <tr>
+            <th>{{this.id}}</th>
+            <th>{{this.empNumber}}</th>
+            <th>{{this.clTaken}}</th>
+            <th>{{this.empName}}</th>
+            <th>{{this.deptName}}</th>
+            <th>{{this.clBalance}}</th>
+            <th>{{this.compoffTaken}}</th>
+            <th>{{this.lwtoutpTaken}}</th>
+            <th>{{this.lwtoutpBalance}}</th>
+            <th>{{this.mtlvTaken}}</th>
+            <th>{{this.mtlvBalance}}</th>
+            <th>{{this.ptyTaken}}</th>
+            <th>{{this.ptyBalance}}</th>
+            <th>{{this.pvglvTaken}}</th>
+            <th>{{this.pvglvBalance}}</th>
+            <th>{{this.sklvTaken}}</th>
+            <th>{{this.sklvBalance}}</th>
+            <th>{{this.vcTaken}}</th>
+            <th>{{this.vcBalance}}</th>
+            <th>{{this.compoffBalance}}</th>
+            
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

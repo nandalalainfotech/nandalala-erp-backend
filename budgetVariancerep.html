@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="70" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="70" style="text-align:center;width: 100%;">Budget Variance</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Fiscal Year</th>
+            <th>Period</th>
+            <th>Company</th>
+            <th>Cost Center</th>
+            <th>Budget Account</th>
+            <th>Actual(Jan)</th>
+            <th>Variance(Jan)</th>
+            <th>Target(Jan)</th>
+            <th>Actual(feb)</th>
+            <th>Variance(feb)</th>
+            <th>Target(feb)</th>
+            <th>Actual(mar)</th>
+            <th>Variance(mar)</th>
+            <th>Target(mar)</th>
+            <th>Actual(apr)</th>
+            <th>Variance(apr)</th>
+            <th>Target(apr)</th>
+            <th>Actual(may)</th>
+            <th>Variance(may)</th>
+            <th>Target(may)</th>
+            <th>Total Target</th>
+            <th>Total Actual</th>
+            <th>Total Variance</th>
+
+
+
+        </tr>
+        {{#each BudgetVariancerep}}
+        <tr>
+            <th>{{this.varId}}</th>
+            <th>{{this.fiscalYear}}</th>
+            <th>{{this.period}}</th>
+            <th>{{this.company}}</th>
+            <th>{{this.centerName}}</th>
+            <th>{{this.bgaccountType}}</th>
+            <th>{{this.actualjan}}</th>
+            <th>{{this.variancejan}}</th>
+            <th>{{this.targetjan}}</th>
+            <th>{{this.actualfeb}}</th>
+            <th>{{this.variancefeb}}</th>
+            <th>{{this.targetfeb}}</th>
+            <th>{{this.actualmar}}</th>
+            <th>{{this.variancemar}}</th>
+            <th>{{this.targetmar}}</th>
+            <th>{{this.actualapr}}</th>
+            <th>{{this.varianceapr}}</th>
+            <th>{{this.targetapr}}</th>
+            <th>{{this.actualmay}}</th>
+            <th>{{this.variancemay}}</th>
+            <th>{{this.targetmay}}</th>
+            <th>{{this.totalTarget}}</th>
+            <th>{{this.totalActual}}</th>
+            <th>{{this.totalVariance}}</th>
+
+
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

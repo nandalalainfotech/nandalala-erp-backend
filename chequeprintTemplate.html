@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Cheque Print Template</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Account</th>
+            <th>Is Account Payable</th>
+            <th>Cheque Size</th>
+            <th>Distance From Top Edge</th>
+            <th>Cheque Width</th>
+            <th>Distance From Left Edge</th>
+            <th>Cheque Height</th>
+            <th>Scanned Cheque</th>
+            <th>Distance From Top Edge</th>
+            <th>Distance From Left Edge</th>
+            <th>Distance From Top</th>
+            <th>Distance From Left</th>
+            <th>Distance From Top Edge</th>
+            <th>Distance From Left Edge</th>
+            <th>Amount Words Width</th>
+            <th>Amount in Words Line Space</th>
+            <th>Distance From Top Edge</th>
+            <th>Distance From Left Edge</th>
+            <th>Distance From Top Edge</th>
+            <th>Distance From Left Edge</th>
+            <th>Distance From Top Edge</th>
+            <th>Distance From Left Edge</th>
+            <th>Default Message</th>
+
+        </tr>
+        {{#each ChequeprintTemplate}}
+        <tr>
+            <th>{{this.cheqId}}</th>
+            <th>{{this.prmaccountName}}</th>
+            <th>{{this.prmisaccPay}}</th>
+            <th>{{this.prmcheqSize}}</th>
+            <th>{{this.periodicity}}</th>
+            <th>{{this.prmdistfromTop}}</th>
+            <th>{{this.prmcheqWidth}}</th>
+            <th>{{this.prmdistfromLeft}}</th>
+            <th>{{this.prmcheqHeight}}</th>
+            <th>{{this.prmmesgtoShow}}</th>
+            <th>{{this.scanCheq}}</th>
+            <th>{{this.dtdistfromTop}}</th>
+            <th>{{this.dtdistfromLeft}}</th>
+            <th>{{this.paydistfromTop}}</th>
+            <th>{{this.paydistfromLeft}}</th>
+            <th>{{this.amtwdistfromTop}}</th>
+            <th>{{this.amtwdistfromLeft}}</th>
+            <th>{{this.amtwWidth}}</th>
+            <th>{{this.amtwlineSpace}}</th>
+            <th>{{this.amtfdistfromTop}}</th>
+            <th>{{this.amtfdistfromLeft}}</th>
+            <th>{{this.accnodistfromTop}}</th>
+            <th>{{this.accnodistfromLeft}}</th>
+            <th>{{this.signposdistfromTop}}</th>
+
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

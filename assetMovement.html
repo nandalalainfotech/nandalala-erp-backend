@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Asset Movement</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Transaction Date</th>
+            <th>Asset</th>
+            <th>Company</th>
+            <th>Target WareHouse</th>
+
+
+        </tr>
+        {{#each AssetMovement}}
+        <tr>
+            <th>{{this.id}}</th>
+            <th>{{this.transactiondate}}</th>
+            <th>{{this.asset}}</th>
+            <th>{{this.company}}</th>
+            <th>{{this.targetwarehouse}}</th>
+
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

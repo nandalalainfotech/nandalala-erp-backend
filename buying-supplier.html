@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Supplier</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Address Type</th>
+            <th>City</th>
+            <th>Address</th>
+            <th>Phone</th>
+            <th>Country</th>
+            <th>State</th>
+
+
+        </tr>
+        {{#each BuySuppliers}}
+        <tr>
+            <th>{{this.supId}}</th>
+            <th>{{this.supName}}</th>
+            <th>{{this.addType}}</th>
+            <th>{{this.supCity}}</th>
+            <th>{{this.supAddress}}</th>
+            <th>{{this.supPhone}}</th>
+            <th>{{this.supCountry}}</th>
+            <th>{{this.supState}}</th>
+
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

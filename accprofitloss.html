@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Accounts Profit Loss Statement</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Company</th>
+            <th>Start Year</th>
+            <th>End Year</th>
+            <th>Period</th>
+            <th>Account</th>
+            <th>Cost Center</th>
+            <th>Project</th>
+            <th>January</th>
+            <th>February</th>
+            <th>March</th>
+            <th>April</th>
+            <th>May</th>
+            <th>June</th>
+            <th>July</th>
+            <th>August</th>
+            <th>September</th>
+            <th>October</th>
+            <th>November</th>
+            <th>December</th>
+
+        </tr>
+        {{#each Accprofitloss}}
+        <tr>
+            <th>{{this.aplsId}}</th>
+            <th>{{this.company}}</th>
+            <th>{{this.startYear}}</th>
+            <th>{{this.endYear}}</th>
+            <th>{{this.periodicity}}</th>
+            <th>{{this.account}}</th>
+            <th>{{this.costcenter}}</th>
+            <th>{{this.projectname}}</th>
+            <th>{{this.jan}}</th>
+            <th>{{this.feb}}</th>
+            <th>{{this.mar}}</th>
+            <th>{{this.apr}}</th>
+            <th>{{this.may}}</th>
+            <th>{{this.jun}}</th>
+            <th>{{this.jul}}</th>
+            <th>{{this.aug}}</th>
+            <th>{{this.sep}}</th>
+            <th>{{this.oct}}</th>
+            <th>{{this.nov}}</th>
+            <th>{{this.dece}}</th>
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

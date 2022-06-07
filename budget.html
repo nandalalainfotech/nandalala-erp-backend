@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Budget</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Budget Name</th>
+            <th>Document Status</th>
+            <th>Cost Center</th>
+            <th>Action if Annual Budget Exceed</th>
+            <th>Action if Monthly Budget Exceed</th>
+            <th>Fiscal Year</th>
+            <th>Company</th>
+            <th>Budget Account Type</th>
+            <th>Amount</th>
+
+        </tr>
+        {{#each Budget}}
+        <tr>
+            <th>{{this.bgId}}</th>
+            <th>{{this.budgetName}}</th>
+            <th>{{this.docStatus}}</th>
+            <th>{{this.centerName}}</th>
+            <th>{{this.actifannualbgexceed}}</th>
+            <th>{{this.actifmonthbgexceed}}</th>
+            <th>{{this.fiscalYear}}</th>
+            <th>{{this.company}}</th>
+            <th>{{this.bgaccountType}}</th>
+            <th>{{this.bgAmount}}</th>
+
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>

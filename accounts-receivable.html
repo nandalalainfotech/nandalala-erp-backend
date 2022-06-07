@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border:1px solid black;width: 100%; margin-top: 10px; font-size: 0.8em;">
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">
+                NANDALALA ERP
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="25" style="text-align:center;width: 100%;">Accounta Receivable</th>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>Customer</th>
+            <th>Outstanding Amount</th>
+            <th>Posting Date</th>
+            <th>Due Date</th>
+            <th>Material Request</th>
+            <th>Voucher Number</th>
+            <th>Invoiced Amount</th>
+            <th>Paid Amount</th>
+            <th>Age</th>
+            <th>0-30</th>
+            <th>31-60</th>
+            <th>61-90</th>
+            <th>91 Above</th>
+            <th>Currency</th>
+            <th>Territory</th>
+            <th>Remarks</th>
+
+        </tr>
+        {{#each Accountsreceivable}}
+        <tr>
+            <th>{{this.id}}</th>
+            <th>{{this.customer}}</th>
+            <th>{{this.outstandingamount}}</th>
+            <th>{{this.postingdate}}</th>
+            <th>{{this.duedate}}</th>
+            <th>{{this.vouchertype}}</th>
+            <th>{{this.voucherno}}</th>
+            <th>{{this.invoicedamount}}</th>
+            <th>{{this.paidamount}}</th>
+            <th>{{this.age}}</th>
+            <th>{{this.uptothirty}}</th>
+            <th>{{this.uptosixty}}</th>
+            <th>{{this.uptoninety}}</th>
+            <th>{{this.ninetyabove}}</th>
+            <th>{{this.currency}}</th>
+            <th>{{this.territory}}</th>
+            <th>{{this.remarks}}</th>
+        </tr>
+        {{/each}}
+
+    </table>
+</body>
+
+</html>
